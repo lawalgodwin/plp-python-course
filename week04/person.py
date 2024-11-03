@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from typing import Literal
+from typing import Literal, NoReturn
 
 # Object oriented programming
 
@@ -11,7 +11,7 @@ class Person:
         self.__age = age
         self.__gender = gender
     
-    def introduce(self):
+    def introduce(self) -> NoReturn:
         """A method that introduces a person object"""
         print(f"Hello, my name is {self.__name}, I'm {self.__age} and I'm a {self.__gender}")
 
